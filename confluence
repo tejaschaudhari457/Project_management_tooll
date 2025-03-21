@@ -1,0 +1,164 @@
+1. What is Confluence?
+Answer:
+Confluence is a web-based team collaboration and documentation tool developed by Atlassian. It allows teams to create, share, and collaborate on documents in real time. It is often used for knowledge management, project documentation, meeting notes, and team communication.
+
+2. How does Confluence differ from Jira?
+Answer:
+
+Feature	Confluence	Jira
+Purpose	Documentation & collaboration	Issue & project tracking
+Best For	Knowledge sharing, project docs, and team wikis	Bug tracking, agile project management
+Integration	Works well with Jira	Works well with Confluence
+Content Type	Pages, blog posts, attachments	Issues, boards, workflows
+Jira is more suited for issue tracking, while Confluence is a knowledge-sharing tool.
+
+3. What are Spaces in Confluence?
+Answer:
+Spaces are high-level containers in Confluence used to organize pages. They can be of two types:
+
+Global Spaces – Used for company-wide documentation.
+Personal Spaces – Each user can create a private workspace for their own notes and drafts.
+4. What are Pages in Confluence?
+Answer:
+Pages are individual documents within a Confluence space. They contain information like text, images, tables, attachments, and embedded media. Pages can be structured hierarchically using a parent-child relationship.
+
+5. What is the difference between a Blog and a Page in Confluence?
+Answer:
+
+Pages are structured documents that can be updated over time, forming part of a knowledge base.
+Blogs are time-sensitive posts used for announcements, updates, or discussions.
+6. What is a Confluence Blueprint?
+Answer:
+A Confluence Blueprint is a predefined template for creating pages quickly with a specific structure. Examples include meeting notes, product requirements, and decision logs.
+
+7. How does version control work in Confluence?
+Answer:
+Confluence maintains a version history for each page. Every time a user edits a page, a new version is created. Users can:
+
+Compare versions
+Restore older versions
+View change history
+8. How do you restrict access to a Confluence page?
+Answer:
+Access to a page can be restricted using Page Restrictions, which allow:
+
+View restrictions (only certain users can see the page)
+Edit restrictions (only specific users can modify content)
+9. What is the Confluence Editor?
+Answer:
+The Confluence Editor is a WYSIWYG (What You See Is What You Get) interface that allows users to format text, insert tables, embed media, and add macros.
+
+10. What are Confluence Macros?
+Answer:
+Macros in Confluence add functionality to pages, such as:
+
+Table of Contents
+Jira Issues
+Roadmaps
+Status Indicators
+Macros make pages more interactive and dynamic.
+
+11. How do you integrate Confluence with Jira?
+Answer:
+Integration can be done by:
+
+Using the Jira Issues macro to display Jira tickets in Confluence.
+Linking Confluence pages to Jira epics or tasks.
+Embedding Confluence documentation inside Jira issues.
+12. What are Labels in Confluence?
+Answer:
+Labels are tags that help categorize pages. They improve searchability and help users filter related content.
+
+13. How does Confluence handle attachments?
+Answer:
+Users can upload attachments to pages and comment on them. Attachments can be versioned, meaning new uploads replace older versions but maintain history.
+
+14. What is a Confluence Dashboard?
+Answer:
+The dashboard is the homepage of Confluence, displaying:
+
+Recent activity
+Favorite pages
+Spaces list
+Blog posts
+15. What is the difference between Cloud and Server versions of Confluence?
+Answer:
+
+Cloud: Hosted by Atlassian, automatically updated.
+Server/Data Center: Self-hosted, requires manual updates and maintenance.
+16. What are Confluence Permissions?
+Answer:
+Permissions control user access at three levels:
+
+Global Permissions – Set by admins at the system level.
+Space Permissions – Manage who can view/edit content in a space.
+Page Restrictions – Control access at the individual page level.
+17. What are Confluence Shortcuts?
+Answer:
+Some useful shortcuts:
+
+E – Edit page
+R – Rename page
+L – Add labels
+/ – Insert macro
+18. How do you create a Table of Contents in Confluence?
+Answer:
+Use the Table of Contents Macro, which automatically generates an index based on heading levels.
+
+19. How do you export a Confluence page?
+Answer:
+Pages can be exported as:
+
+PDF
+Word
+XML
+20. What is Confluence Search and How Does It Work?
+Answer:
+Confluence uses a powerful search engine that indexes content, labels, and metadata to provide relevant results.
+
+21. What is the Confluence API?
+Answer:
+The Confluence REST API allows developers to:
+
+Retrieve pages
+Update content
+Manage users and spaces
+22. How do you add a comment to a Confluence page?
+Answer:
+Users can:
+
+Leave comments at the bottom of a page.
+Add inline comments by highlighting text.
+23. What is Page Tree in Confluence?
+Answer:
+A Page Tree is a hierarchical view of pages in a space, showing parent-child relationships.
+
+24. How do you move a page in Confluence?
+Answer:
+Go to Page Tools > Move, then select a new parent location.
+
+25. What is an Inline Comment in Confluence?
+Answer:
+An inline comment is added by selecting text and clicking the comment button. It helps in contextual discussions.
+
+26. What are Watchers in Confluence?
+Answer:
+Users can "watch" a page to receive notifications about updates.
+
+27. What are Drafts in Confluence?
+Answer:
+Unpublished edits are saved as drafts and can be restored later.
+
+28. How do you delete a Confluence page?
+Answer:
+Go to Page Tools > Delete. Deleted pages move to the trash and can be restored.
+
+29. What are Space Blueprints in Confluence?
+Answer:
+Preconfigured spaces that follow a specific structure, such as:
+
+Team spaces
+Documentation spaces
+30. What are Confluence User Groups?
+Answer:
+Admins can create user groups to manage permissions collectively instead of assigning permissions to individual users.
