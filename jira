@@ -1,0 +1,241 @@
+Basic Jira Interview Questions
+1. What is Jira?
+Jira is a project management and issue-tracking tool developed by Atlassian. It is widely used for Agile software development, bug tracking, and workflow management. Jira supports Scrum and Kanban methodologies, making it a powerful tool for teams following Agile practices.
+
+2. What are the key features of Jira?
+Issue tracking – Allows tracking of bugs, tasks, and features.
+Agile boards – Provides Scrum and Kanban boards.
+Workflow customization – Enables custom workflows for different project needs.
+Reporting and dashboards – Offers various reports like burndown charts, velocity reports, etc.
+Permissions and security – Granular control over user access.
+Integration support – Works with Confluence, Bitbucket, Jenkins, and other tools.
+
+3. What are issues in Jira?
+Issues in Jira represent tasks, bugs, user stories, or any work that needs to be tracked. Each issue has attributes like status, priority, assignee, and due date.
+
+4. What are the different types of issues in Jira?
+Epic – Large body of work that can be broken into multiple stories.
+Story – A feature or functionality request.
+Task – A standard work item.
+Bug – A defect or error in the software.
+Sub-task – A smaller unit of work within a task.
+
+5. What is a Jira workflow?
+A workflow in Jira defines the sequence of statuses and transitions that an issue follows during its lifecycle, from creation to completion.
+
+6. What are the different types of reports available in Jira?
+Jira provides various reports such as:
+Sprint Report
+Burndown Chart
+Velocity Chart
+Cumulative Flow Diagram
+Control Chart
+Pie Chart Report
+
+7. What is the difference between a Scrum and Kanban board in Jira?
+Scrum Board – Focuses on sprint-based development with a backlog, sprint planning, and time-boxed iterations.
+Kanban Board – Focuses on continuous workflow without sprints and emphasizes work-in-progress (WIP) limits.
+
+8. How do you create a new project in Jira?
+Go to Jira Dashboard > Projects > Create Project.
+Select a template (Scrum, Kanban, or Bug Tracking).
+Configure project settings and name.
+Click Create.
+
+9. What are Epics, Stories, and Tasks in Jira?
+Epic – A large work item that spans multiple sprints.
+Story – A user requirement that needs to be implemented.
+Task – A general work item assigned to a team member.
+
+10. How do you create a sub-task in Jira?
+Open the parent issue.
+Click More > Create Sub-Task.
+Fill in details and click Create.
+Intermediate Jira Interview Questions
+
+11. What are Jira Components and Versions?
+Components – Subsections of a project used to group issues.
+Versions – Used for release tracking in a project.
+
+12. How do you configure permissions in Jira?
+Permissions are managed using Permission Schemes, which define access levels for users and groups in Jira projects.
+
+13. What are custom fields in Jira, and how do you create them?
+Custom fields allow additional data capture in issues. They can be created via Administration > Issues > Custom Fields > Add Custom Field.
+
+14. What is a Jira filter, and how do you create one?
+Filters allow saving specific issue searches. They can be created using JQL (Jira Query Language) and saved for future use.
+
+15. What is JQL (Jira Query Language)? Provide some examples.
+JQL is a powerful query language for searching issues in Jira. Example:
+
+ini
+Copy
+Edit
+project = "MyProject" AND status = "Open"  
+16. What is a backlog in Jira? How do you manage it?
+A backlog is a prioritized list of work items (stories, tasks, and bugs) in a project. It is managed using Scrum Boards.
+
+17. How do you create and manage sprints in Jira?
+Navigate to the backlog.
+Click Create Sprint.
+Move issues into the sprint and start it.
+18. How does Jira integrate with other tools like Confluence, Bitbucket, or Jenkins?
+Jira integrates with:
+
+Confluence – For documentation linking.
+Bitbucket/GitHub – For code repository management.
+Jenkins – For CI/CD automation.
+19. What is a Jira Issue Type Scheme?
+It defines available issue types for a project, ensuring consistency across projects.
+
+20. What is the difference between Jira Software, Jira Core, and Jira Service Management?
+Jira Software – Used for Agile project management.
+Jira Core – Used for business projects.
+Jira Service Management – IT service desk for customer support.
+Advanced Jira Interview Questions
+21. What is a Jira workflow scheme?
+A workflow scheme maps workflows to specific issue types in a project.
+
+22. How do you create a custom workflow in Jira?
+Go to Jira Administration > Issues > Workflows.
+Create a new workflow and add statuses and transitions.
+Assign the workflow to a workflow scheme.
+23. How do you automate tasks in Jira?
+Using Jira Automation Rules or Jira REST API for event-driven automation.
+
+24. What are post functions in Jira workflows?
+Post functions are actions that occur after a workflow transition, such as sending notifications or updating fields.
+
+25. What is the role of a Jira Administrator?
+Jira Admins manage configurations, workflows, user access, integrations, and overall system health.
+
+26. How do you handle bulk issue updates in Jira?
+Using Bulk Change Operations, you can edit, move, transition, or delete multiple issues at once.
+
+27. What are Jira Gadgets and Dashboards?
+Gadgets provide data visualization, while dashboards organize multiple gadgets in a single view.
+
+28. Explain the difference between Jira Cloud and Jira Server.
+Jira Cloud – Hosted by Atlassian, requires no maintenance.
+Jira Server – Self-hosted, requiring internal IT management.
+29. How do you troubleshoot performance issues in Jira?
+Check logs, optimize database queries, archive old issues, and increase JVM heap size.
+
+30. What are the best practices for managing Jira projects efficiently?
+Use clear workflows, proper permissions, automation, dashboards, and version control.
+
+Scenario-Based Jira Interview Questions
+31. How would you handle a situation where multiple teams need to work on the same Jira project?
+Use Components to categorize work for each team.
+Define Issue Type Schemes for different workflows.
+Assign different Boards to each team with filters based on team-specific JQL.
+Use Custom Fields to track team assignments.
+32. A user reports that they cannot transition an issue from 'In Progress' to 'Done.' How would you troubleshoot this?
+Check if the user has Transition Issues permission.
+Verify the workflow’s transition rules (conditions, validators, post functions).
+Ensure no automation rule is preventing the transition.
+Confirm if any Resolution field is mandatory before moving to ‘Done.’
+33. You need to create a report showing the number of issues completed in the last sprint. How would you do it?
+Go to Reports > Sprint Report in Jira.
+Select the desired sprint.
+View completed issues.
+Alternatively, use JQL:
+JQL
+Copy
+Edit
+project = "XYZ" AND sprint in closedSprints() AND status = Done
+34. A team wants to track technical debt in Jira. How would you configure Jira to support this?
+Create a Custom Issue Type for Technical Debt.
+Define a Custom Field for Technical Debt Severity.
+Use Labels or Components for classification.
+Set up a Kanban Board to visualize debt items.
+35. How would you set up an automation rule to notify users when a high-priority issue is created?
+Go to Jira Administration > Automation.
+Create a new rule:
+Trigger: Issue Created.
+Condition: Priority = High.
+Action: Send email/slack notification.
+Save and enable the rule.
+JQL (Jira Query Language) Questions
+36. What is JQL, and how is it used in Jira?
+JQL (Jira Query Language) allows users to filter and search issues efficiently. It is used in dashboards, reports, and automation.
+
+37. Write a JQL query to find all open bugs assigned to a specific user.
+JQL
+Copy
+Edit
+project = "XYZ" AND issuetype = Bug AND assignee = "tejas" AND status != Done
+38. How do you filter issues based on a custom field using JQL?
+JQL
+Copy
+Edit
+project = "XYZ" AND "CustomFieldName" = "Value"
+39. Write a JQL query to find all issues updated in the last 7 days.
+JQL
+Copy
+Edit
+updated >= -7d
+40. How can JQL be used to create complex issue filters?
+By using Boolean operators:
+
+JQL
+Copy
+Edit
+(project = "XYZ" AND status = "In Progress") OR (priority = High AND assignee = "tejas")
+Jira Plugin and Integration Questions
+41. What are some popular Jira plugins, and what are they used for?
+BigPicture – Project portfolio management.
+Tempo Timesheets – Time tracking and reporting.
+Zephyr – Test management.
+ScriptRunner – Advanced automation and scripting.
+42. How do you integrate Jira with Jenkins for CI/CD?
+Install the Jira Plugin for Jenkins.
+Configure Jira API credentials in Jenkins.
+Use JQL filters to trigger builds from Jira issues.
+Update Jira issue status automatically when a Jenkins job completes.
+43. What is the Jira REST API, and how can it be used?
+The Jira REST API allows programmatic access to Jira data using HTTP requests. Example request:
+
+sh
+Copy
+Edit
+curl -u user:token -X GET "https://yourdomain.atlassian.net/rest/api/3/issue/ABC-123"
+44. How do you create a custom Jira plugin?
+Set up a Jira development environment using the Atlassian SDK.
+Create a plugin skeleton:
+sh
+Copy
+Edit
+atlas-create-jira-plugin
+Implement custom logic.
+Compile and deploy the plugin.
+45. What are the security considerations when integrating Jira with third-party tools?
+Use OAuth or API tokens instead of passwords.
+Restrict API access with role-based permissions.
+Use SSL/TLS encryption.
+Regularly audit API keys and permissions.
+Jira Administration Questions
+46. How do you back up and restore Jira data?
+Go to Jira Administration > System > Backup Manager.
+Click Create Backup.
+Store the backup file securely.
+To restore, use Jira Importer and upload the backup file.
+47. How do you set up and manage Jira user roles and permissions?
+Go to Jira Administration > User Management.
+Assign users to groups (e.g., Developers, Testers, Admins).
+Define Permission Schemes and apply them to projects.
+48. What are Jira permission schemes, and how do they work?
+Permission schemes define access levels for users. They are reusable across projects and control who can view, edit, delete, or transition issues.
+
+49. How do you migrate Jira from one server to another?
+Backup Jira data from the old server.
+Install Jira on the new server.
+Restore the backup using Jira Importer.
+Update Jira Base URL and Database Configuration.
+50. How do you optimize Jira performance for large-scale projects?
+Increase JVM memory allocation.
+Use archiving and issue cleanup strategies.
+Optimize database indexing.
+Limit custom fields and unnecessary plugins.
+Enable caching and content delivery optimizations.
