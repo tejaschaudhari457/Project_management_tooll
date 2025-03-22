@@ -1,0 +1,115 @@
+**Basic Automotive Questions for Continental Interview**
+
+### 1. Automotive Basics & Fundamentals
+- What are the different types of sensors used in vehicles?
+- What is an OBD (On-Board Diagnostics) system?
+- What is Automotive Embedded System?
+- What is ESP (Electronic Stability Program) and how does it work?
+- What is the difference between Diesel and Petrol engines?
+- What is the difference between a Microcontroller and an ECU (Electronic Control Unit)?
+- What is the role of actuators in automotive systems?
+- What is the role of a CAN bus in automobiles, and why is it used?
+- Explain the working of ABS (Anti-lock Braking System).
+- Explain the working of the ignition system in an IC engine.
+
+### 2. Automotive Braking & Safety Systems
+- How do seatbelts improve passenger safety?
+- What are Airbags, and how do they work?
+- What is ABS (Anti-lock Braking System), and how does it work?
+- What is Electronic Stability Control (ESC)?
+- What is the difference between disc brakes and drum brakes?
+- What is the difference between passive and active safety systems in a car?
+- What is the function of an Electronic Brakeforce Distribution (EBD) system?
+- What is Traction Control System (TCS)?
+
+### 3. Automotive Communication Protocols
+- How do automotive ECUs communicate with each other?
+- How does the FlexRay protocol work, and where is it used?
+- What is UDS (Unified Diagnostic Services), and where is it used?
+- What is the baud rate of CAN protocol?
+- What is the difference between CAN and Ethernet in automotive applications?
+- What is the difference between CAN and LIN protocols?
+
+### 4. Automotive Software & Testing
+- What is HIL (Hardware in the Loop) testing?
+- What is MIL (Model in the Loop) testing?
+- What is SIL (Software in the Loop) testing?
+- What is the significance of flashing firmware in automotive ECUs?
+- What is the purpose of a bootloader in an ECU?
+
+### 5. AUTOSAR (Automotive Open System Architecture)
+- What are the different AUTOSAR layers?
+- What is AUTOSAR, and why is it used in automotive software development?
+- What is the difference between Classic AUTOSAR and Adaptive AUTOSAR?
+- What is the role of MCAL (Microcontroller Abstraction Layer) in AUTOSAR?
+- What is RTE (Runtime Environment) in AUTOSAR?
+
+### 6. Car Electrical Systems & Sensors
+- How does a car battery work, and what is its voltage?
+- How does keyless entry and push-button start work in modern cars?
+- How do parking sensors and reverse cameras work?
+- What are the different types of sensors used in modern cars?
+- What is TPMS (Tire Pressure Monitoring System)?
+- What is the function of the ECU (Electronic Control Unit) in a car?
+- What is the purpose of an alternator in a vehicle?
+
+### 7. Car Maintenance & Troubleshooting
+- How do you check and maintain engine oil levels?
+- How often should a car's air filter be replaced?
+- What are the common causes of engine overheating?
+- What are the common reasons for poor fuel efficiency?
+- What are the signs of a failing car battery?
+- Why does a car vibrate at high speeds?
+
+### 8. Car Mechanical & Electrical Basics
+- How does a clutch work in a manual transmission car?
+- How does a turbocharger work in a car engine?
+- What are the different types of car suspensions?
+- What are the different types of car transmissions?
+- What are the main components of a car engine?
+- What is the difference between a petrol engine and a diesel engine?
+- What is the difference between front-wheel drive (FWD), rear-wheel drive (RWD), and all-wheel drive (AWD)?
+- What is the function of a radiator in a car?
+- What is the purpose of an exhaust system in a vehicle?
+- What is the role of an alternator in a car?
+
+### 9. Electric & Hybrid Cars
+- How does an electric vehicle (EV) differ from a conventional car?
+- How long does it take to charge an EV battery?
+- What are the main components of an electric vehicle powertrain?
+- What is the difference between a hybrid and a plug-in hybrid vehicle?
+- What is the role of regenerative braking in EVs?
+
+### 10. Electric Vehicles & ADAS (Advanced Driver Assistance Systems)
+- How do ADAS features like Lane Keep Assist and Adaptive Cruise Control work?
+- What are the main components of an electric vehicle powertrain?
+- What is LiDAR, and how is it used in autonomous vehicles?
+- What is the difference between BEV (Battery Electric Vehicle) and PHEV (Plug-in Hybrid Electric Vehicle)?
+- What is V2X communication, and how does it improve road safety?
+
+### 11. Functional Safety & Standards
+- What are the key safety mechanisms in an automotive embedded system?
+- What is ASIL (Automotive Safety Integrity Level), and what are its different levels?
+- What is ISO 26262, and why is it important in automotive systems?
+- What is the role of FMEA (Failure Modes and Effects Analysis) in automotive safety?
+- What is a watchdog timer, and why is it used in automotive ECUs?
+
+### 12. Powertrain & Vehicle Dynamics
+- How does regenerative braking work in an EV?
+- What are the different types of hybrid vehicles?
+- What is the difference between Manual Transmission and Automatic Transmission?
+- What is the function of a Differential in a car?
+- What is the role of ECU in an electric vehicle (EV)?
+- What are the different types of vehicle suspensions?
+
+### 13. Tires & Vehicle Dynamics
+- What are the different types of car tires?
+- What is the difference between radial and bias-ply tires?
+- What is oversteer and understeer in vehicle handling?
+- What is the effect of tire pressure on fuel efficiency?
+- What is wheel alignment and why is it important?
+
+---
+
+This version categorizes all questions alphabetically under relevant topics while ensuring clarity and completeness. Let me know if you need further refinements!
+
