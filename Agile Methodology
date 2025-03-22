@@ -1,0 +1,99 @@
+**Agile Methodology and Its Frameworks**
+
+### **1. Introduction to Agile Methodology**
+Agile is an iterative and incremental approach to software development that emphasizes flexibility, collaboration, customer feedback, and high adaptability to change. It aims to deliver high-quality software through small, manageable increments rather than a single large release.
+
+### **2. Principles of Agile (Agile Manifesto)**
+Agile is based on the following core values as defined in the Agile Manifesto:
+1. **Individuals and interactions** over processes and tools.
+2. **Working software** over comprehensive documentation.
+3. **Customer collaboration** over contract negotiation.
+4. **Responding to change** over following a plan.
+
+Additionally, Agile is guided by **12 Agile Principles**, which include customer satisfaction, early and continuous delivery, welcoming change, frequent deliveries, collaboration, motivation, face-to-face communication, working software as a measure of progress, sustainable development, technical excellence, simplicity, and self-organizing teams.
+
+### **3. Benefits of Agile Methodology**
+- Faster time to market.
+- Improved flexibility and adaptability to changes.
+- Higher customer satisfaction.
+- Continuous improvement and feedback.
+- Better team collaboration and engagement.
+
+### **4. Agile Frameworks**
+Agile is an umbrella term that includes several frameworks. The most popular Agile frameworks are:
+
+#### **4.1 Scrum**
+Scrum is a widely used Agile framework that follows an iterative approach. It divides work into fixed-length iterations called **sprints** (typically 2-4 weeks long). It includes roles, events, and artifacts:
+
+- **Roles**:
+  - **Product Owner** – Defines and prioritizes requirements.
+  - **Scrum Master** – Facilitates Scrum practices and removes impediments.
+  - **Development Team** – Responsible for delivering the product.
+
+- **Events**:
+  - **Sprint Planning** – Defining sprint goals and backlog items.
+  - **Daily Stand-up** – Short daily meeting for progress updates.
+  - **Sprint Review** – Demonstration of completed work.
+  - **Sprint Retrospective** – Reflection on improvement areas.
+
+- **Artifacts**:
+  - **Product Backlog** – List of all desired work.
+  - **Sprint Backlog** – Tasks selected for the current sprint.
+  - **Increment** – The working software delivered at the end of a sprint.
+
+#### **4.2 Kanban**
+Kanban is a visual workflow management system that helps teams optimize and streamline their processes.
+- **Principles**:
+  - Visualizing work.
+  - Limiting work in progress (WIP).
+  - Managing flow.
+  - Continuous improvement.
+- Uses a **Kanban Board** with columns like "To Do," "In Progress," and "Done."
+
+#### **4.3 Extreme Programming (XP)**
+XP focuses on improving software quality and responsiveness to changing customer requirements.
+- **Key Practices**:
+  - Pair Programming.
+  - Test-Driven Development (TDD).
+  - Continuous Integration.
+  - Simple Design.
+  - Frequent Releases.
+
+#### **4.4 Lean Software Development**
+Lean is derived from manufacturing principles and focuses on minimizing waste while maximizing value delivery.
+- **Principles**:
+  - Eliminate waste.
+  - Build quality in.
+  - Create knowledge.
+  - Deliver fast.
+  - Empower teams.
+  - Optimize the whole system.
+
+#### **4.5 SAFe (Scaled Agile Framework)**
+SAFe is used for large enterprises to implement Agile across multiple teams.
+- **Key Elements**:
+  - Agile Release Train (ART).
+  - Lean-Agile Principles.
+  - Continuous Delivery Pipeline.
+
+#### **4.6 Crystal**
+Crystal is a lightweight Agile framework that focuses on team size, project priorities, and business criticality.
+- Variants include Crystal Clear, Crystal Yellow, and Crystal Red.
+- Encourages **human collaboration and communication.**
+
+#### **4.7 Disciplined Agile (DA)**
+DA is a flexible framework that allows organizations to choose Agile methods based on their needs.
+- It integrates Scrum, Kanban, and Lean principles.
+
+### **5. Agile vs Traditional Waterfall Model**
+| Feature | Agile | Waterfall |
+|---------|-------|----------|
+| Approach | Iterative & Incremental | Sequential |
+| Flexibility | Highly flexible | Rigid |
+| Customer Involvement | High | Low |
+| Risk Management | Continuous | Managed at later stages |
+| Documentation | Minimal | Extensive |
+
+### **6. Conclusion**
+Agile methodology is a powerful approach for modern software development, enabling teams to be more adaptive, collaborative, and customer-focused. Various frameworks like Scrum, Kanban, and XP provide flexibility for different project needs, ensuring better efficiency and success rates in software development.
+
