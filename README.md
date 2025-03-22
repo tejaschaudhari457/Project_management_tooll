@@ -1,13 +1,35 @@
-/Project-Repo
-│── /Jenkins               # CI/CD pipeline scripts & configurations
-│── /Jira                  # Issue tracking & workflows
-│── /Cadence               # Project cadence, timelines & sprint planning
-│── /Project-Methodology   # Documentation on Agile, Scrum, Kanban, etc.
-│── /Deployment            # Deployment-related files
-│   │── /Scripts           # Bash, Ansible, Terraform, or Kubernetes scripts
-│   │── /Configs           # YAML, JSON, .env configuration files
-│   │── /Docker            # Dockerfiles, Compose files
-│   │── /Kubernetes        # Helm charts, K8s manifests (YAML)
-│   │── /Ansible           # Ansible playbooks for automation
-│   │── /Terraform         # Infrastructure as Code (IaC)
-│   │── /Docs              # Deployment guides, architecture docs
+Directory Details
+
+/Jenkins
+
+Contains scripts and configuration files for Jenkins CI/CD pipelines.
+
+/Jira
+
+Houses issue tracking templates, workflow configurations, and Jira-related documentation.
+
+/Cadence
+
+Includes sprint planning, project timelines, and cadence documentation to manage project execution.
+
+/Project-Methodology
+
+Documents Agile, Scrum, Kanban methodologies, best practices, and guidelines followed in the project.
+
+/Deployment
+
+This directory contains all deployment-related files and scripts, further structured as follows:
+
+/Scripts – Contains Bash, Ansible, Terraform, or Kubernetes scripts for automation.
+
+/Configs – Stores YAML, JSON, and .env configuration files.
+
+/Docker – Holds Docker-related files such as Dockerfiles and Docker Compose configurations.
+
+/Kubernetes – Includes Helm charts and Kubernetes manifests (YAML files).
+
+/Ansible – Contains Ansible playbooks for deployment automation.
+
+/Terraform – Houses Terraform scripts for Infrastructure as Code (IaC).
+
+/Docs – Stores deployment guides, architecture documentation, and related references.
