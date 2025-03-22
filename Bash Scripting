@@ -1,0 +1,205 @@
+**Bash Scripting - Comprehensive Guide**
+
+## **Introduction to Bash Scripting**
+Bash (Bourne Again SHell) is a command-line interpreter and scripting language for Unix/Linux systems. It is used for automating tasks, system administration, and application development.
+
+---
+
+## **1. Bash Script Basics**
+
+### **1.1 Writing and Executing a Bash Script**
+1. Create a file with a `.sh` extension:
+   ```bash
+   touch script.sh
+   ```
+2. Add a shebang (#!) to specify the interpreter:
+   ```bash
+   #!/bin/bash
+   echo "Hello, World!"
+   ```
+3. Give execute permission:
+   ```bash
+   chmod +x script.sh
+   ```
+4. Run the script:
+   ```bash
+   ./script.sh
+   ```
+
+### **1.2 Variables in Bash**
+```bash
+#!/bin/bash
+name="Tejas"
+echo "Hello, $name!"
+```
+
+- **Declaring variables:** `varname=value`
+- **Using variables:** `$varname`
+- **Readonly variables:** `readonly varname`
+- **Unsetting variables:** `unset varname`
+
+---
+
+## **2. Conditional Statements**
+
+### **2.1 If-Else Statement**
+```bash
+#!/bin/bash
+num=10
+if [ $num -gt 5 ]; then
+    echo "Number is greater than 5"
+else
+    echo "Number is less than or equal to 5"
+fi
+```
+**Operators:**
+- `-eq` (equal), `-ne` (not equal)
+- `-gt` (greater than), `-lt` (less than)
+- `-ge` (greater or equal), `-le` (less or equal)
+
+### **2.2 Case Statement**
+```bash
+#!/bin/bash
+read -p "Enter a number: " num
+case $num in
+    1) echo "You entered One" ;;
+    2) echo "You entered Two" ;;
+    *) echo "Invalid input" ;;
+esac
+```
+
+---
+
+## **3. Looping in Bash**
+
+### **3.1 For Loop**
+```bash
+for i in {1..5}; do
+    echo "Iteration: $i"
+done
+```
+
+### **3.2 While Loop**
+```bash
+count=1
+while [ $count -le 5 ]; do
+    echo "Count: $count"
+    ((count++))
+done
+```
+
+### **3.3 Until Loop**
+```bash
+num=1
+until [ $num -ge 5 ]; do
+    echo "Number: $num"
+    ((num++))
+done
+```
+
+---
+
+## **4. Functions in Bash**
+```bash
+function greet() {
+    echo "Hello, $1!"
+}
+greet "Tejas"
+```
+
+---
+
+## **5. User Input Handling**
+```bash
+read -p "Enter your name: " username
+echo "Hello, $username!"
+```
+
+---
+
+## **6. File Handling in Bash**
+
+### **6.1 Reading a File**
+```bash
+while read line; do
+    echo "$line"
+done < file.txt
+```
+
+### **6.2 Writing to a File**
+```bash
+echo "This is a new line" >> output.txt
+```
+
+---
+
+## **7. Debugging a Bash Script**
+- Execute in debug mode: `bash -x script.sh`
+- Enable debugging inside script: `set -x`
+- Disable debugging: `set +x`
+
+---
+
+## **8. Interview Questions with Answers**
+
+### **Q1: What is the difference between `.` and `source` in Bash?**
+**Ans:** Both are used to execute scripts in the current shell, but `source` is more readable and preferred.
+
+### **Q2: How do you check if a variable is empty in Bash?**
+```bash
+if [ -z "$var" ]; then
+    echo "Variable is empty"
+fi
+```
+
+### **Q3: What is the use of `$?` in Bash?**
+**Ans:** It holds the exit status of the last executed command (0 for success, non-zero for failure).
+
+### **Q4: How do you pass arguments to a Bash script?**
+```bash
+#!/bin/bash
+echo "First argument: $1"
+echo "Second argument: $2"
+```
+Run: `./script.sh arg1 arg2`
+
+### **Q5: How do you create an infinite loop in Bash?**
+```bash
+while true; do
+    echo "Running forever"
+done
+```
+
+### **Q6: How do you list all environment variables?**
+**Ans:** Run `printenv` or `env`
+
+### **Q7: What is the difference between `&&` and `||` in Bash?**
+**Ans:**
+- `&&` (AND): Runs the second command only if the first succeeds.
+- `||` (OR): Runs the second command only if the first fails.
+
+### **Q8: How do you schedule a Bash script to run at a specific time?**
+**Ans:** Use `cron` jobs:
+```bash
+crontab -e
+0 5 * * * /path/to/script.sh  # Runs at 5 AM daily
+```
+
+### **Q9: How do you create a function inside a Bash script?**
+```bash
+my_function() {
+    echo "Hello from function!"
+}
+my_function
+```
+
+### **Q10: How do you find and replace text in a file using Bash?**
+```bash
+sed -i 's/old_text/new_text/g' filename.txt
+```
+
+---
+
+## **Conclusion**
+Bash scripting is essential for automating tasks and managing Unix/Linux environments. Understanding variables, loops, conditionals, and functions will help you write efficient scripts and perform well in interviews.
+
