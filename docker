@@ -1,0 +1,226 @@
+**Top 20 Docker Interview Questions and Answers**
+
+---
+
+### **1. What is Docker?**
+**Answer:**  
+Docker is an **open-source containerization platform** that allows applications to run in an isolated environment called a **container**. It is **lightweight, portable**, and faster compared to traditional **Virtual Machines (VMs)**.
+
+**Key Benefits:**  
+- **Portability:** Runs the same application on different environments.
+- **Lightweight:** Shares the same OS kernel, reducing overhead.
+- **Scalability:** Easy to scale applications using Docker Swarm or Kubernetes.
+- **Fast Deployment:** Containers start in seconds compared to minutes for VMs.
+
+---
+
+### **2. What is the difference between Containers and Virtual Machines (VMs)?**
+| Feature | Virtual Machine (VM) | Docker Container |
+|---------|-----------------|-----------------|
+| **Size** | Heavy (GBs) | Lightweight (MBs) |
+| **Startup Time** | Slow (minutes) | Fast (seconds) |
+| **Resource Usage** | High (Full OS load) | Low (Shared OS kernel) |
+| **Portability** | Less Portable | Highly Portable |
+| **Performance** | Slower | Faster |
+
+---
+
+### **3. What are the main components of Docker Architecture?**
+**Answer:**  
+Docker has **three main components**:
+1. **Docker Client** – Sends commands to Docker daemon (e.g., `docker run`, `docker build`).
+2. **Docker Daemon (Server)** – Runs in the background, manages containers.
+3. **Docker Registry (Docker Hub)** – Stores pre-built images.
+
+---
+
+### **4. What is the difference between a Docker Image and a Container?**
+| Feature | Docker Image | Docker Container |
+|---------|-------------|-----------------|
+| **Definition** | Blueprint of a container | Running instance of an image |
+| **Mutability** | Immutable (unchangeable) | Mutable (can change at runtime) |
+| **Storage** | Stored on disk | Uses RAM and disk |
+| **Example** | `nginx:latest` | Running instance `nginx_container_1` |
+
+---
+
+### **5. What is a Dockerfile?**
+**Answer:**  
+A Dockerfile is a **script** that contains a set of instructions to **build a Docker image**.
+
+**Example Dockerfile:**
+```Dockerfile
+FROM ubuntu:latest  # Base Image
+RUN apt-get update && apt-get install -y nginx  # Install Nginx
+CMD ["nginx", "-g", "daemon off;"]  # Start Nginx
+```
+Command to build an image from Dockerfile:
+```sh
+docker build -t my-nginx .
+```
+
+---
+
+### **6. How do you create and run a container?**
+**Answer:**  
+1. Pull an image from Docker Hub:
+   ```sh
+   docker pull ubuntu
+   ```
+2. Run a container from an image:
+   ```sh
+   docker run -it ubuntu bash
+   ```
+   Here `-it` allows interactive mode.
+
+---
+
+### **7. What is the difference between CMD and ENTRYPOINT in Docker?**
+| Feature | CMD | ENTRYPOINT |
+|---------|-----|------------|
+| **Usage** | Provides default command | Makes container behave like an executable |
+| **Override** | Can be overridden during `docker run` | Cannot be easily overridden |
+| **Example** | `CMD ["echo", "Hello"]` | `ENTRYPOINT ["/bin/sh", "-c"]` |
+
+---
+
+### **8. What is Docker Compose?**
+**Answer:**  
+Docker Compose is a tool to **define and run multi-container Docker applications** using a YAML file (`docker-compose.yml`).
+
+**Example `docker-compose.yml` file:**
+```yaml
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+```
+Command to start services:
+```sh
+docker-compose up -d
+```
+
+---
+
+### **9. What is a Docker Volume?**
+**Answer:**  
+Docker Volumes **persist data** outside the container lifecycle.
+
+Create a volume:
+```sh
+docker volume create my_volume
+```
+Use a volume in a container:
+```sh
+docker run -v my_volume:/data ubuntu
+```
+
+---
+
+### **10. How to remove Docker containers, images, and volumes?**
+```sh
+# Remove a container
+$ docker rm container_id
+
+# Remove an image
+$ docker rmi image_id
+
+# Remove a volume
+$ docker volume rm volume_name
+```
+
+---
+
+### **11. What is the difference between Docker Swarm and Kubernetes?**
+| Feature | Docker Swarm | Kubernetes |
+|---------|-------------|------------|
+| **Complexity** | Easier | More complex |
+| **Scalability** | Less scalable | Highly scalable |
+| **Load Balancing** | Built-in | External LoadBalancer |
+| **Storage Options** | Limited | Extensive |
+
+---
+
+### **12. How do you check running containers?**
+```sh
+docker ps   # Shows running containers
+docker ps -a   # Shows all containers (stopped + running)
+```
+
+---
+
+### **13. How to restart a stopped container?**
+```sh
+docker start container_id
+```
+
+---
+
+### **14. How to enter a running container?**
+```sh
+docker exec -it container_id bash
+```
+
+---
+
+### **15. How do you expose ports in Docker?**
+Using `-p` flag:
+```sh
+docker run -p 8080:80 nginx
+```
+
+---
+
+### **16. What is the difference between Bind Mounts and Volumes?**
+| Feature | Bind Mounts | Volumes |
+|---------|------------|---------|
+| **Location** | Anywhere on host | `/var/lib/docker/volumes` |
+| **Performance** | Slow | Faster |
+| **Use Case** | Development | Production |
+
+---
+
+### **17. How do you build a custom Docker image?**
+```sh
+docker build -t my_custom_image .
+```
+
+---
+
+### **18. How do you tag an image?**
+```sh
+docker tag image_id myrepo/myimage:v1
+```
+
+---
+
+### **19. How do you push an image to Docker Hub?**
+```sh
+docker login
+docker push myrepo/myimage:v1
+```
+
+---
+
+### **20. What is Multi-Stage Build in Docker?**
+**Answer:**  
+Multi-stage builds help reduce image size.
+
+**Example:**
+```Dockerfile
+FROM golang AS build
+WORKDIR /app
+COPY . .
+RUN go build -o app
+
+FROM alpine
+COPY --from=build /app/app /app
+CMD ["/app"]
+```
+
+---
+
+These are the top 20 Docker interview questions with detailed answers to help you prepare effectively!
+
